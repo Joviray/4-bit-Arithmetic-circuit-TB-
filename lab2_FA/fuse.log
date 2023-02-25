@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o C:/Xilinx/lab2_FA/lab2_FA_sch_lab2_FA_sch_sch_tb_isim_beh.exe -prj C:/Xilinx/lab2_FA/lab2_FA_sch_lab2_FA_sch_sch_tb_beh.prj work.lab2_FA_sch_lab2_FA_sch_sch_tb work.glbl 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/lab2_FA/lab2_FA_sch.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Xilinx/lab2_FA/lab2_tb2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module AND2B1
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module XOR2
+Compiling module ADD1_MXILINX_lab2_FA_sch
+Compiling module INV
+Compiling module lab2_FA_sch
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling architecture behavioral of entity lab2_fa_sch_lab2_fa_sch_sch_tb
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Compiled 9 Verilog Units
+Built simulation executable C:/Xilinx/lab2_FA/lab2_FA_sch_lab2_FA_sch_sch_tb_isim_beh.exe
+Fuse Memory Usage: 51320 KB
+Fuse CPU Usage: 624 ms

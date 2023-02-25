@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Xilinx/lab2_FA/lab2_FA_sch_lab2_FA_sch_sch_tb_isim_beh.exe" -prj "C:/Xilinx/lab2_FA/lab2_FA_sch_lab2_FA_sch_sch_tb_beh.prj" "work.lab2_FA_sch_lab2_FA_sch_sch_tb" "work.glbl" 

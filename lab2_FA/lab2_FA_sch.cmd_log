@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Xilinx/lab2_FA/lab2_FA_sch.xst" -ofn "C:/Xilinx/lab2_FA/lab2_FA_sch.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/lab2_FA/lab2_FA_sch.xst" -ofn "C:/Xilinx/lab2_FA/lab2_FA_sch.syr" 

@@ -1,0 +1,10 @@
+Command line:
+   lab2_FA_sch_lab2_FA_sch_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60121
+
+Fri Feb 24 23:11:43 2023
+
+
+ Elaboration Time: 0.015625 sec

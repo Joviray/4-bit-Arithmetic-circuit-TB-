@@ -1,0 +1,142 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.1
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab2_FA_sch.vf
+// /___/   /\     Timestamp : 02/24/2023 23:10:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xa9500xl -verilog C:/Xilinx/lab2_FA/lab2_FA_sch.vf -w C:/Xilinx/lab2_FA/lab2_FA_sch.sch
+//Design Name: lab2_FA_sch
+//Device: xa9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ADD1_MXILINX_lab2_FA_sch(A0, 
+                                B0, 
+                                CI, 
+                                CO, 
+                                S0);
+
+    input A0;
+    input B0;
+    input CI;
+   output CO;
+   output S0;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   
+   AND2B1  I_36_60 (.I0(CI), 
+                   .I1(B0), 
+                   .O(XLXN_7));
+   AND2  I_36_61 (.I0(CI), 
+                 .I1(A0), 
+                 .O(XLXN_10));
+   OR2  I_36_62 (.I0(XLXN_6), 
+                .I1(XLXN_7), 
+                .O(XLXN_8));
+   OR3  I_36_63 (.I0(XLXN_9), 
+                .I1(XLXN_11), 
+                .I2(XLXN_10), 
+                .O(CO));
+   XOR2  I_36_64 (.I0(XLXN_8), 
+                 .I1(A0), 
+                 .O(S0));
+   AND2B1  I_36_65 (.I0(B0), 
+                   .I1(CI), 
+                   .O(XLXN_6));
+   AND2  I_36_80 (.I0(B0), 
+                 .I1(A0), 
+                 .O(XLXN_11));
+   AND2  I_36_81 (.I0(CI), 
+                 .I1(B0), 
+                 .O(XLXN_9));
+endmodule
+`timescale 1ns / 1ps
+
+module lab2_FA_sch(A0, 
+                   A1, 
+                   A2, 
+                   B0, 
+                   B1, 
+                   B2, 
+                   B3, 
+                   C0, 
+                   C1, 
+                   C2, 
+                   C3, 
+                   one, 
+                   C, 
+                   S0, 
+                   S1, 
+                   S2, 
+                   S3);
+
+    input A0;
+    input A1;
+    input A2;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input C0;
+    input C1;
+    input C2;
+    input C3;
+    input one;
+   output C;
+   output S0;
+   output S1;
+   output S2;
+   output S3;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire C_DUMMY;
+   
+   assign C = C_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   ADD1_MXILINX_lab2_FA_sch  XLXI_1 (.A0(one), 
+                                    .B0(XLXN_3), 
+                                    .CI(C3), 
+                                    .CO(C_DUMMY), 
+                                    .S0(S3));
+   (* HU_SET = "XLXI_2_1" *) 
+   ADD1_MXILINX_lab2_FA_sch  XLXI_2 (.A0(XLXN_4), 
+                                    .B0(B2), 
+                                    .CI(C2), 
+                                    .CO(C_DUMMY), 
+                                    .S0(S2));
+   (* HU_SET = "XLXI_3_2" *) 
+   ADD1_MXILINX_lab2_FA_sch  XLXI_3 (.A0(A1), 
+                                    .B0(XLXN_5), 
+                                    .CI(C1), 
+                                    .CO(C_DUMMY), 
+                                    .S0(S1));
+   (* HU_SET = "XLXI_4_3" *) 
+   ADD1_MXILINX_lab2_FA_sch  XLXI_4 (.A0(A0), 
+                                    .B0(B0), 
+                                    .CI(C0), 
+                                    .CO(C_DUMMY), 
+                                    .S0(S0));
+   INV  XLXI_5 (.I(B3), 
+               .O(XLXN_3));
+   INV  XLXI_6 (.I(A2), 
+               .O(XLXN_4));
+   INV  XLXI_7 (.I(B1), 
+               .O(XLXN_5));
+endmodule
